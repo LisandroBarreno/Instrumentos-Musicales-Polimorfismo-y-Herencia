@@ -22,7 +22,7 @@ public class Piano extends InstrumentoMusical {
         CountDownLatch latch = new CountDownLatch(1);
         
         try {
-            new_player.Play("sonido.wav");
+            new_player.Play("piano-do.wav");
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
             Logger.getLogger(Piano.class.getName()).log(Level.SEVERE, null, ex);
         }
